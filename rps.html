@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSOR</title>
+    <link rel="stylesheet" href="rps.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="rps.js"></script>
+</head>
+<body onload="init()">
+    <ul class="nav-container">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rps.html" title="Rock Paper Scessor" style="background-color: green;">RPS</a></li>
+        <li><a href="craps.html">Craps</a></li>
+        <li><a href="tictac.html">Tic Tac Toe</a></li>
+        <li><a href="scrabble.html">Scrabble</a></li>
+    </ul>
+
+<h1 align="center">Rock Paper Scissor Game</h1>
+
+    <div class="rules">
+       <h1>What are the rules?</h1> 
+       <p>The rules are very simple and probably you remember them from your childhood:</p>
+       <ul>
+        <li>If you choose Rock, you will win against Scissors but lose against Paper.</li>
+        <li>If you choose Scissors, you will win against Paper but lose against Rock.</li>
+        <li>If you choose Paper, you will win against Rock but lose against Scissors.</li>
+       </ul>
+    </div>
+    <div class="game">
+        <img src="rock.svg" data-value="rock" alt="Rock" width="150px"  id="rock">
+        <img src="paper.svg" data-value="paper" alt="PAPER" width="150px" id="paper">
+        <img src="scissors.svg" data-value="scissor" alt="Scissors" width="150"  id="scissor">
+    </div>
+
+<div class="results">
+    <h1 id="result"> </h1>
+    <h3>Your Pick :</h3><h3 id="yourPick"> </h3><br>
+   <h3>Computer Pick:</h3><h3 id="comPick"> </h3>  
+</div>
+<div class="score">
+    <table>
+        <caption><h1>ScoreBoard</h1></caption>
+        <tr>
+            <th>You</th>
+            <th>Computer</th>
+            <th>Tie</th>
+        </tr>
+        <tr>
+            <td id="yourScore">0</td>
+            <td id="comScore">0</td>
+            <td id="tie">0</td>
+        </tr>
+    </table>
+
+</div>
+    <div align="center">
+        <input type="submit" value="Reset" id="reset">
+    </div>
+</body>
+</html>

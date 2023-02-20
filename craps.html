@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>craps</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body background="https://img.freepik.com/premium-photo/dice-yellow-background_127657-13646.jpg?w=900">
+
+    <ul class="nav-container">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rps.html" title="Rock Paper Scessor">RPS</a></li>
+        <li><a href="craps.html" style="background-color: green;">Craps</a></li>
+        <li><a href="tictac.html">Tic Tac Toe</a></li>
+        <li><a href="scrabble.html">Scrabble</a></li>
+    </ul>
+     
+    
+    <div class="smcontainer" style="font-weight: bolder; font-size: large;"><ul><li>You win if a 7 or 11 roll </li>
+        <li>you  lose if 2, 3, or 12 roll (known as “craps”).</li>
+    <li>Any other number that rolls becomes the “point”</li>
+    <li> and the point must roll again before a 7 to win</li></ul>
+</div>
+    <div class="container">
+        <h1> Let's Play Craps!!!</h1>
+
+        <button id="play">PLAY</button>
+<button id="clr">Clear_Screen</button>
+        <div id="out"></div>
+    </div>
+
+
+    <style>
+        .container {
+            text-align: center;
+        }
+
+        #play {
+            text-decoration: none;
+            background-color: black;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            margin: 20px;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+        }
+
+        #clr {
+            text-decoration: none;
+            background-color: black;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            margin: 20px;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+        }
+        .smcontainer{
+            margin-left: 70px;
+        }
+    </style>
+
+    <script src="./craps.js"></script>
+</body>
+
+</html>

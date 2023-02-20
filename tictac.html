@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic_Tac_Toe</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body background="https://img.freepik.com/premium-photo/valentine-s-day-concept-with-ox-yellow-background_185193-69728.jpg?w=900">
+    <ul class="nav-container">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rps.html" title="Rock Paper Scessor">RPS</a></li>
+        <li><a href="craps.html">Craps</a></li>
+        <li><a href="tictac.html" style="background-color: green;">Tic Tac Toe</a></li>
+        <li><a href="scrabble.html">Scrabble</a></li>
+    </ul>
+
+    <header>
+        <h1>Wellcom To TicTacToe</h1>
+    </header>
+    <hr>
+    <div class="container">
+
+        <table class="tbl">
+            <tr>
+                <td class="c1">
+                    <button id="b1"></button>
+                </td>
+                <td class="c2">
+                    <button id="b2"></button>
+
+                </td>
+                <td class="c3">
+                    <button id="b3"></button>
+
+                </td>
+            </tr>
+            <!-- r--2 -->
+            <tr>
+                <td class="c4">
+                    <button id="b4"></button>
+
+                </td>
+                <td class="c5">
+                    <button id="b5"></button>
+
+                </td>
+                <td class="c6">
+                    <button id="b6"></button>
+
+                </td>
+            </tr>
+            <!-- r--3 -->
+            <tr>
+                <td class="c7">
+                    <button id="b7"></button>
+
+                </td>
+                <td class="c8">
+                    <button id="b8"></button>
+
+                </td>
+                <td class="c9">
+                    <button id="b9"></button>
+
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <h1 id="won_state"></h1>
+        <div class="btn" id="btn">
+            <button class="rst" id="rst">reset</button>
+
+        </div>
+
+    </div>
+
+
+    <style>
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            height: 650px;
+            width: 70%;
+            margin: auto;
+            /* border: 2px solid black; */
+            /* background-color: thistle; */
+        }
+
+        .tbl {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 90px;
+        }
+
+        tr,
+        td {
+            text-align: center;
+            border: 2px solid violet;
+            width: 110px;
+            height: 100px;
+        }
+
+        button {
+            width: 110px;
+            height: 100px;
+
+            background-color: darkmagenta;
+            font-size: x-large;
+        }
+
+        .btn {
+            width: 60%;
+            display: none;
+        }
+
+        .btn .rst {
+            text-decoration: none;
+            background-color: black;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            margin: 20px;
+            margin-left: 300px;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+
+
+    <script src="./tictac.js"></script>
+</body>
+
+</html>

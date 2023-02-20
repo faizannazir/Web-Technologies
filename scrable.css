@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/partials/_normalize.scss */
+/* html,
+*/
+  *{margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../sass/partials/_normalize.scss */
+/* article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+} */
+
+/* line 31, ../sass/partials/_normalize.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../sass/partials/_normalize.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/partials/_normalize.scss */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 40, ../sass/partials/_normalize.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* line 45, ../sass/partials/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 5, ../sass/styles.scss */
+html,
+body {
+  font-size: 16px;
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* line 13, ../sass/styles.scss */
+nav {
+  border-bottom: #e18a07 2px solid;
+  width: 100%;
+  padding: 0.625em;
+  display: block;
+  height: 2em;
+}
+
+/* line 20, ../sass/styles.scss */
+h1 {
+  font-size: 2em;
+  display: inline-block;
+  float: left;
+  padding-left: 1em;
+}
+
+/* line 26, ../sass/styles.scss */
+#contact {
+  font-size: 2em;
+  display: inline-block;
+  float: right;
+  padding-right: 1em;
+}
+
+/* line 32, ../sass/styles.scss */
+#contact a {
+  color: #000;
+}
+
+/* line 35, ../sass/styles.scss */
+#contact i:hover {
+  color: #e18a07;
+  cursor: pointer;
+}
+
+/* line 40, ../sass/styles.scss */
+#rules {
+  position: absolute;
+  z-index: 999;
+  width: 31.25em;
+  height: 31.25em;
+  text-align: center;
+  left: 50%;
+  margin-left: -200px;
+  top: 50%;
+  margin-top: -200px;
+}
+
+/* line 51, ../sass/styles.scss */
+#rules p {
+  margin-bottom: 1.25em;
+}
+
+/* line 55, ../sass/styles.scss */
+#game-container {
+  text-align: center;
+  margin: 2em auto;
+  width: 100vh;
+  height: 80vh;
+}
+
+/* line 62, ../sass/styles.scss */
+#game-container p {
+  display: inline-block;
+  margin-right: 1em;
+  margin-bottom: 3em;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+/* line 69, ../sass/styles.scss */
+#game-container p span {
+  font-weight: 300;
+}
+
+/* line 72, ../sass/styles.scss */
+#game-container p#info {
+  display: block;
+  text-align: center;
+  font-size: 2em !important;
+  height: 2em;
+  margin-bottom: 1em;
+}
+
+/* line 80, ../sass/styles.scss */
+#scrambled-word {
+  font-size: 3em !important;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  display: block;
+  margin-left: 48px;
+  margin-bottom: 1em !important;
+}
+
+/* line 89, ../sass/styles.scss */
+#scrambled-word p {
+  display: block;
+  width: 100%;
+}
+
+/* line 94, ../sass/styles.scss */
+#user-guess {
+  display: block;
+  width: 20em;
+  height: 3em;
+  padding-left: 1em;
+  margin: 0 auto 1.25em;
+  border: 1px solid #000;
+  outline-color: #e18a07;
+  font-size: 1.1em;
+}
+
+/* line 104, ../sass/styles.scss */
+small {
+  font-size: 0.8em;
+}
+
+/* line 107, ../sass/styles.scss */
+.lead {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+/* line 111, ../sass/styles.scss */
+.correct,
+.incorrect {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+/* line 116, ../sass/styles.scss */
+.correct {
+  color: green;
+  display: block;
+}
+
+/* line 121, ../sass/styles.scss */
+.incorrect {
+  color: red;
+  display: block;
+}
+
+/* line 126, ../sass/styles.scss */
+.hidden {
+  visibility: hidden;
+}
+
+/* line 129, ../sass/styles.scss */
+button {
+  cursor: pointer;
+  width: 12em;
+  height: 3em;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+/* line 138, ../sass/styles.scss */
+#submit,
+#play-btn {
+  background: #fff;
+  border: 2px solid #e18a07;
+}
+
+/* line 143, ../sass/styles.scss */
+#submit:hover,
+#play-btn:hover {
+  background: #e18a07;
+  color: #fff;
+  transition: 0.2s background;
+}
+
+/* line 150, ../sass/styles.scss */
+#reset-btn {
+  background: #fff;
+  border: none;
+  box-shadow: 1px 1px 1px #999;
+}
+
+/* line 155, ../sass/styles.scss */
+#reset-btn:hover {
+  box-shadow: 1px 1px 1px #000;
+  transition: 0.2s box-shadow;
+}
+
+/* line 161, ../sass/styles.scss */
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+/* line 166, ../sass/styles.scss */
+#copyright {
+  text-align: center;
+}

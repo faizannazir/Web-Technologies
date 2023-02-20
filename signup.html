@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>User Signup</title>
+    <!-- Meta tags for ux and seo  -->
+    <meta name="title" content="Signup">
+    <meta name="description" content=" User Signup page ">
+    <meta name="author" content="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph Protocol for social media campaign -->
+    <meta propety="og:title" content=" User-Signup ">
+    <meta propety="og:type" content="website">
+    <meta propety="og:image" content="logo.png"> <!-- Preview Image -->
+    <meta propety="og:url" content="https://www.example.com">
+
+    <!-- Optional -->
+    <meta property="og:description" content="">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:site_name" content="Attendance Managment System">
+
+    <!-- favicon and css link -->
+    <link rel="shortcut icon" href="http://bims01.nayatel.net:8888/public/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body >
+    <main>
+        <h1>Sign Up</h1>
+        <form action="signin.html" method="post" id="signup">
+            <div>
+                <img src="webbg.png" alt="Logo" width="180px">
+            </div>
+            <div>
+                <br>
+                <label for="user_first_name">First Name</label> <br>
+                <input type="text" id="user_first_name" name="user_first_name"  minlength="3" maxlength="12"
+                    autofocus autocomplete="false" pattern="[A-Z a-z]{3,12}$" required> <br>
+            </div>
+            <div>
+                <label for="user_last_name">Last Name</label> <br>
+                <input type="text" id="user_last_name" name="user_last_name"  minlength="3" maxlength="12" pattern="[A-Z a-z]{3,12}$" required> <br>
+            </div>
+            <div>
+                <label for="user_email">Email</label> <br>
+                <input type="email" id="user_email" name="user_email" pattern="^[a-z A-z]+[a-z0-9._%+-]{1,}@[a-z0-9.-]{2,}\.[a-z]{2,}$" required > <br>
+            </div>
+            <div>
+                <label for="user_pass">Password</label> <br>
+                <input type="password" id="user_pass" name="user_pass"  minlength="8" pattern="^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9])(?=.*[a-z]).{8,}$" required> <br>
+            </div>
+            <div>
+                <label for="user_con_pass">Confirm Password</label> <br>
+                <input type="password" id="user_con_pass" name="user_con_pass"  minlength="8"  required> <br>
+                <input type="checkbox" id="show"> Show Password<br>
+            </div>
+            <div>
+                <input type="submit" value="Sign Up">
+                <br>
+            </div>
+
+        </form>
+
+
+        <h3>Have an account</h3>
+        <button> <a href="signin.html" type="button">Sign In</a></button>
+    </main>
+    <!-- Java Script -->
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

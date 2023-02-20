@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>User Signin</title>
+    <!-- Meta tags for ux and seo  -->
+    <meta name="title" content="Login">
+    <meta name="description" content="user Login page ">
+    <meta name="author" content="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph Protocol for social media campaign -->
+    <meta propety="og:title" content=" User-Login ">
+    <meta propety="og:type" content="website">
+    <meta propety="og:image" content="logo.png"> <!-- Preview Image -->
+    <meta propety="og:url" content="https://www.example.com">
+
+    <!-- Optional OG Protocols -->
+    <meta property="og:description"
+        content="Attendance Managment System is design to use camera to capture in frame pictures and detect user and mark attendance ">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:site_name" content="Attendance Managment System">
+
+    <!-- favicon and css link -->
+    <link rel="shortcut icon" href="http://bims01.nayatel.net:8888/public/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Sign In</h1>
+        <form action="index.html" method="post" id="signin">
+            <div>
+                <img src="webbg.png" alt="Logo" width="180px">
+            </div>
+            <div>
+                <br>
+                <label for="user_email">Email</label><br>
+                <input type="email" id="user_email" required minlength="3" autofocus> <br>
+            </div>
+            <div>
+                <label for="user_pass">Password</label><br>
+                <input type="password" id="user_pass" required minlength="8"> <br>
+                <input type="checkbox" id="show"> Show Password<br>
+            </div>
+            <!-- <div>
+                <a href="forgot.html" style="color: blue;">Forgotten Password</a>
+            </div> -->
+            <div>
+                <input type="submit" value="Sign in">
+                <br>
+            </div>
+        </form>
+        <h3>Don't have account?</h3>
+        <button> <a href="signup.html" type="button">Sign Up</a></button>
+    </main>
+    <!-- Java Script -->
+    <script src="js/signin.js"></script>
+</body>
+
+</html>

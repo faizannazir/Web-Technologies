@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    height: 100%;
+    background-image: url("../bg-image.jpg");
+    background-repeat:  no-repeat ;
+    background-attachment:  fixed;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+div, input[type="checkbox"] {
+    margin: 10px;
+}
+
+form {
+    width: 500px;
+    background-color: rgba(10, 150, 20, 0.1);
+    font-size: large;
+}
+input
+{
+    outline-color: transparent;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]
+{
+    padding-left: 20px;
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    border-color: transparent;
+}
+input[type="file"]
+{
+    text-align: center;
+    width: 80%;
+}
+
+input[type="submit"],button
+ {
+    margin: 20px;
+    color: white;
+    font-size: larger;
+    border-radius: 10px;
+    width: 180px;
+    height: 50px;
+    border-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: rgb(10, 150, 50);
+}
+input[type="submit"]:hover,
+button:hover
+ {
+    background-color: rgb(10, 150, 120);
+ }
+
+ input.error
+ {
+    border: 2px solid red;
+    outline: 2px;
+    outline-color: red;
+ }
+
+@media (max-width: 500px) {
+
+    h1
+    {
+        font: 2em;
+    }
+    h3
+    {
+        font: 1em;
+    }
+    form {
+        width: 300px;
+    }
+    img
+    {
+        width: 120px;
+    }
+    button,input[type="submit"]
+    {
+        width: 100px;
+    }
+    #forgot
+    {
+
+        width: fit-content;
+
+    }
+}
